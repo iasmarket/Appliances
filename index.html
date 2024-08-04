@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+    <style>
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centrer les lignes horizontalement */
+            align-items: center; /* Centrer les lignes verticalement */
+            min-height: calc(100vh - 7cm); /* Prendre en compte l'espace en haut de la page */
+        }
+
+        .product {
+            width: calc(100% /5); /* 6 images par ligne pour ordinateur */
+            margin-bottom: 20px;
+            text-align: center; /* Centrer le contenu horizontalement */
+            border: 1px solid red; /* Bordure rouge */
+            border-radius: 10px; /* Coins arrondis de 10px */
+            overflow: hidden; /* Masquer le contenu qui dépasse */
+            padding: 10px; /* Ajouter un peu d'espace autour du contenu */
+            display: flex; /* Utiliser flexbox pour centrer le contenu verticalement */
+            flex-direction: column; /* Permet de centrer le contenu verticalement */
+        }
+
+        /* Réglage de la hauteur des rectangles */
+        .product .content {
+            height: 200px; /* Hauteur uniforme pour tous les rectangles */
+            overflow: hidden; /* Masquer le texte au-delà de cette hauteur */
+        }
+
+        .product img {
+            width: 100%; /* Pour que l'image remplisse le rectangle */
+            height: auto;
+            display: block; /* S'assurer que l'image est centrée */
+        }
+
+        .product .description {
+            margin-top: 10px; /* Espace entre l'image et la description */
+        }
+
+        .product .more-link {
+            margin-top: 5px;
+            cursor: pointer; /* Permet de cliquer sur le lien */
+            color: blue; /* Changer la couleur du texte */
+        }
+
+        /* Règles pour les tablettes */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .product {
+                width: calc(100% / 3); /* 3 images par ligne pour tablette */
+            }
+        }
+
+        /* Règles pour les mobiles */
+        @media (max-width: 767px) {
+            .product {
+                width: 100%; /* Prendre toute la largeur disponible sur mobile */
+            }
+        }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="product">
+  <a href="https://www.amazon.com/dp/B091JH27TK?tag=eloabder-20">
+    <img src="https://m.media-amazon.com/images/I/411tTGeQPNL._SL500_.jpg" alt="Product Image">
+  </a>
+  <p>Code:</p>
+  <p>Discover fabulous USA DEALS 👉 Sunday, August 4, 2024👇 #iasmarketAppliances #Appliances #water purifier EHM 3 Pack PureFlow Purifying Water Pitcher Replacement Cartridge – Healthy Drinking Water, 6-Stage Filtration & Hydration System, Cleaner Healthier Clear Water $26.xx ($8.xx / Count) Link=</p>
+  <a href="https://www.amazon.com/dp/B091JH27TK?tag=eloabder-20">View Product</a>
+</div>
+
+
+</div>
+
+</body>
+</html>
+Add index.html
