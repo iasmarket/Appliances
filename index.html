@@ -19,6 +19,7 @@
 <body>
 
 <div class="datetime">
+    <div class="date" id="comment"></div>
     <div class="date" id="date"></div>
     <div class="time" id="time"></div>
 </div>
@@ -46,7 +47,8 @@
         const formattedDate = formatterDate.format(now);
         const formattedTime = formatterTime.format(now);
 
-        document.getElementById('date').textContent ="As an AMAZON Associate, I earn from qualifying purchases."+"/n"+ formattedDate;
+        document.getElementById('comment').textContent = "As an AMAZON Associate, I earn from qualifying purchases.";
+        document.getElementById('date').textContent = formattedDate;
         document.getElementById('time').textContent = formattedTime;
     }
 
