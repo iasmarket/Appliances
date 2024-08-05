@@ -8,75 +8,90 @@
     <title>Amazon Product Page</title>
     <style>
         body {
-            background-color: black; /* Couleur de l'arrière-plan en noir */
-            color: white; /* Texte en blanc pour une meilleure lisibilité */
+            background-color: black;
+            color: white;
         }
 
         .datetime {
             text-align: center;
-            color: gray; /* Couleur grise */
+            color: gray;
         }
 
         .date, .time {
-            font-size: 48px; /* Grande taille de police pour la date et l'heure */
+            font-size: 48px;
         }
 
         .container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Centrer les lignes horizontalement */
-            align-items: center; /* Centrer les lignes verticalement */
-            min-height: calc(100vh - 7cm); /* Prendre en compte l'espace en haut de la page */
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 7cm);
         }
 
         .product {
-            width: calc(100% / 4); /* 4 images par ligne pour ordinateur */
+            width: calc(100% / 4);
             margin-bottom: 20px;
-            text-align: center; /* Centrer le contenu horizontalement */
-            border: 1px solid red; /* Bordure rouge */
-            border-radius: 10px; /* Coins arrondis de 10px */
-            overflow: hidden; /* Masquer le contenu qui dépasse */
-            padding: 10px; /* Ajouter un peu d'espace autour du contenu */
-            display: flex; /* Utiliser flexbox pour centrer le contenu verticalement */
-            flex-direction: column; /* Permet de centrer le contenu verticalement */
-            background-color: black; /* Couleur de l'arrière-plan en noir */
-            color: white; /* Texte en blanc */
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
         }
 
-        /* Réglage de la hauteur des rectangles */
         .product .content {
-            height: 200px; /* Hauteur uniforme pour tous les rectangles */
-            overflow: hidden; /* Masquer le texte au-delà de cette hauteur */
+            height: 200px;
+            overflow: hidden;
         }
 
         .product img {
-            width: 100%; /* Pour que l'image remplisse le rectangle */
+            width: 100%;
             height: auto;
-            display: block; /* S'assurer que l'image est centrée */
+            display: block;
         }
 
         .product .description {
-            margin-top: 10px; /* Espace entre l'image et la description */
+            margin-top: 10px;
         }
 
         .product .more-link {
             margin-top: 5px;
-            cursor: pointer; /* Permet de cliquer sur le lien */
-            color: blue; /* Changer la couleur du texte */
+            cursor: pointer;
+            color: blue;
         }
 
-        /* Règles pour les tablettes */
         @media (min-width: 768px) and (max-width: 991px) {
             .product {
-                width: calc(100% / 3); /* 3 images par ligne pour tablette */
+                width: calc(100% / 3);
             }
         }
 
-        /* Règles pour les mobiles */
         @media (max-width: 767px) {
             .product {
-                width: 100%; /* Prendre toute la largeur disponible sur mobile */
+                width: 100%;
             }
+        }
+
+        /* Style pour le bouton flottant */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -89,7 +104,7 @@
     </div>
 
     <div class="container">
-
+       
 
 <div class= " product"><a href="https://www.amazon.com/dp/B08QJ8SHGV?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51e1ld7+QuL._SL500_.jpg" alt="Product Image"></a><p>Sealegend 2 Pieces Dryer Vent Cleaner Kit Dryer Lint Vacuum Attachment, Dryer Vent Cleaning Lint Remover 2 Hoses Tools for Home Improvement</p><a href="https://www.amazon.com/dp/B08QJ8SHGV?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
@@ -969,19 +984,12 @@
 <div class="product"><a href="https://www.amazon.com/dp/B0C42HCM21?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31jk3lpoygL._SL500_.jpg" alt="Product Image"></a><p>Barnakl Ceiling Fan Filters | Activated Coconut Shell Carbon Filter | Easy-Stick Universal Ceiling Fan Air Filters | Unscented Ceiling Fan Blade Filters for Common Household Contaminants, (3-Count)</p><a href="https://www.amazon.com/dp/B0C42HCM21?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0D2MZ4Y7Z?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51KgTHizWyL._SL500_.jpg" alt="Product Image"></a><p>Butto 5-Pack Ceiling Fan Filters for Blades - Strong Adhesive Ceiling Fan Filters for Common Household Contaminants - Unscented Coconut Carbon Fan Air Purifier Pads to Make Air Fresh and Natural</p><a href="https://www.amazon.com/dp/B0D2MZ4Y7Z?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
 
-
-
-
-
-
-
-
-
-
-
 <div class="product"><a href="https://www.amazon.com/dp/B0D41QQW21?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41t5TIKVumL._SL500_.jpg" alt="Product Image"></a><p>Portable AC Window Vent Kit with Universal Coupler, Insputer 2024 New Adjustable Air Conditioner Window Seal Kit for Sliding Window, Fit for All AC with 5.9 & 5.1 Inch Diameter Exhaust Hose</p><a href="https://www.amazon.com/dp/B0D41QQW21?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
     </div>
+
+    <!-- Bouton flottant -->
+    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">Go Back</button>
 
     <script>
         function updateTime() {
@@ -1012,7 +1020,7 @@
         }
 
         updateTime();
-        setInterval(updateTime, 1000); // Mettre à jour chaque seconde
+        setInterval(updateTime, 1000);
     </script>
 </body>
 
